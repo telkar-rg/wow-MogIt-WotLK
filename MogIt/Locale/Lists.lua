@@ -68,7 +68,6 @@ L.professions = {
 	[10] = GetSpellInfo(2575), -- Mining
 	[11] = GetSpellInfo(8613), -- Skinning
 
-	[12] = GetSpellInfo(78670), -- Archaeology
 	[13] = GetSpellInfo(2550), -- Cooking
 	[14] = GetSpellInfo(3273), -- First Aid
 	[15] = GetSpellInfo(7620), -- Fishing
