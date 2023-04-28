@@ -3,6 +3,15 @@ local L = mog.L;
 
 local f = mog:CreateFilter("quality");
 local colours = ITEM_QUALITY_COLORS;
+-- Add Heirloom to colours - they are missing from the constant for
+-- some reason. The values are from GetItemQualityColor(7) on a 3.3.5
+-- client.
+colours[7] = {
+	hex = "|cffe6cc80",
+	r = 0.90196078431373,
+	g = 0.8,
+	b = 0.50196078431373,
+}
 local selected;
 local num;
 local all;
@@ -51,8 +60,7 @@ function f.dd.initialize(self)
 	info.func = f.dd.SelectAll;
 	info.notCheckable = true;
 	UIDropDownMenu_AddButton(info);
-	
-	for i,v in ipairs(L.quality) do 
+	for i,v in ipairs(L.quality) do
 			info = UIDropDownMenu_CreateInfo();
 			info.text =	_G["ITEM_QUALITY"..v.."_DESC"];
 			info.value = v;
