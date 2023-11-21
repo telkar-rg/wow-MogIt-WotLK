@@ -54,5 +54,5 @@ f.ex:  Cataclysm helm vs Cataclysm Headguard
 
 **My server has custom items, how do I add them?**  
 You can create a custom module or a new item type under an existing module to store these.  
-Another option is an extra module [MogIt-WotLK-Custom](https://github.com/Skrylas/MogIt-WotLK-Custom), which will load any items added to it to existing modules without needing to edit the base addon. 
+Another option is an extra module [MogIt-WotLK-Custom](https://github.com/telkar-rg/wow-MogIt-WotLK-Custom), which will load any items added to it to existing modules without needing to edit the base addon. 
 Instructions on adding items and further details located there.
