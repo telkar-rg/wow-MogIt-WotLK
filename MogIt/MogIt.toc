@@ -1,9 +1,9 @@
 ﻿## Interface: 30300
-## Title: MogIt (1.1)
+## Title: MogIt (1.2)
 ## Author: Telkar-RG & github.com/feltwitch & Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
 ## Version: 3.3.2
 ## SavedVariables: MogItDB, MogItWishlist
-## OptionalDeps: DataStore_Containers
+## OptionalDeps: TransmogTracker
 ## Notes: Transmogrification Assistant
 ## X-Category: Roleplay & Transmogrification
 ## X-Localizations: enUS, frFR, deDE, esES, esMX, ruRU, koKR, zhCN, zhTW, ptBR, itIT

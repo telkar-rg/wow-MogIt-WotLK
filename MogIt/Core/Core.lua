@@ -7,6 +7,7 @@ local ItemInfo = LibStub("LibItemInfo-1.0");
 LibStub("Libra"):EmbedWidgets(mog);
 
 --local character = DataStore_Containers and DataStore:GetCharacter();
+local TMT = _G["TransmogTracker"]
 
 mog.frame = CreateFrame("Frame","MogItFrame",UIParent,"ButtonFrameTemplate");
 mog.list = {};
@@ -166,7 +167,14 @@ ItemInfo.RegisterCallback(mog, "OnItemInfoReceivedBatch", "ItemInfoReceived");
 
 -- Disabling Datastore for now, causing LUA errors.  Note to fix later.
 function mog:HasItem(itemID)
-	return GetItemCount(itemID, true) > 0 --or (character and select(3, DataStore:GetContainerItemCount(character, itemID)) > 0)
+	local hasItem = GetItemCount(itemID, true) > 0 --or (character and select(3, DataStore:GetContainerItemCount(character, itemID)) > 0)
+	if hasItem then
+		return hasItem
+	end
+	if TMT then
+		return TMT:checkItemId(itemID)
+	end
+	return
 end
 
 
